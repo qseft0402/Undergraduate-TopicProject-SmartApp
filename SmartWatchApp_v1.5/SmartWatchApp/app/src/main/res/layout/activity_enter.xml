@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    tools:context="com.example.awen.smartwatchapp.Enter">
+
+    <Button
+        android:id="@+id/btnGoToNowState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="手環狀態"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="歷史紀錄"
+        app:layout_constraintEnd_toEndOf="@+id/btnGoToNowState"
+        app:layout_constraintStart_toStartOf="@+id/btnGoToNowState"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToNowState" />
+
+    <Button
+        android:id="@+id/btnDropAllData1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="清除所有資料"
+        app:layout_constraintEnd_toEndOf="@+id/btnGoToHistory"
+        app:layout_constraintStart_toStartOf="@+id/btnGoToHistory"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToHistory" />
+</android.support.constraint.ConstraintLayout>

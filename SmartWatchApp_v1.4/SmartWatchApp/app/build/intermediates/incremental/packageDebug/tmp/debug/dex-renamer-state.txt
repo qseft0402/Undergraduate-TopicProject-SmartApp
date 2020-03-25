@@ -1,0 +1,4 @@
+#Fri Oct 05 09:48:28 CST 2018
+base.0=/Users/awen/Desktop/project/Topic/MOST/App/SmartWatchApp_v1.4/SmartWatchApp/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awen.smartwatchapp.DataDetailedActivity">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graph"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graph">
+
+        <TextView
+            android:id="@+id/text_Oxygen_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="血氧濃度最大值："
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/text_Oxygen_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="血氧濃度最小值："
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/text_Oxygen_avg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="血氧濃度平均值："
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/text_pulse_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="心率最大值："
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/text_pulse_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="心率最小值："
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/text_pulse_avg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="心率平均值："
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/tvSportTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="運動時間約: 1小時38分鐘"
+            android:textSize="28dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
